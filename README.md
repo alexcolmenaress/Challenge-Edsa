@@ -1,1 +1,8 @@
 # Challenge-Edsa
+Este Contenedor pertenece a Alexis Colmenares donde se almacena el flujo de una automatización de prueba para optar por el cargo de Desarrollador RPA para la empresa Edsa.
+La automatización consiste en una archivo Pdf con nombres y ubicaciones de productos que deben ser consultados en la página de Amazon, se deben extraer los detalles de precios y costos de envío hacia las zonas indicadas, además de la fecha estimada de entrega. Finalmente, se deben filtrar los resultados de las consultas cuyos precios esten en un rango de precios que se obtienen de forma aleatoria dentro del flujo, así como también, a partir de una fecha aleatoria dentro de un rango específico, se deben filtar los productos que tengan esa fecha como entrega o estimada de entrega, para, con esos productos ordenarlos según las calificaciones de estrellas, también aleatoria, de cada producto de forma descendente. Por último, se deben guardar todos los resultados en tablas diferentes dentre de un mismo archivo Excel, además de una última hoja que almacena los datos aleatorios generados dentro del flujo. En caso de excepciones de sistema, se realiza la captura de pantalla y se envía a través de correo electrónico.
+Prerequisitos:
+  1. Las carpetas Input, Output, Screenshots deben ser creadas en la ruta c:\Users\xxxxxx\Desktop
+  2. La plantilla del archivo de salida debe estar en la carpeta c:\Users\xxxxxx\Downloads
+  3. el archivo config.xlsx se mantiene dentro de la carpeta del proyecto
+  4. Para la configuración de correo se usó el Integration Service de cloud.uipath.com con una cuenta de correos creada específicamente para este proyecto
